@@ -1,4 +1,4 @@
-# themoviedb
+# infinitybinge
 
 A new Flutter project.
 
