@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:infinitybinge/style/style.dart';
+import 'package:infinitybinge/widgets/home/explore/explore_widget.dart';
 import 'package:infinitybinge/widgets/home/watchlist_widget.dart';
 
 class MainScreenWidget extends StatefulWidget {
@@ -12,16 +13,9 @@ class MainScreenWidget extends StatefulWidget {
 class _MainScreenWidgetState extends State<MainScreenWidget> {
   int _selectedTab = 0;
 
-  static const List<Widget> _ScreenWidgets = [
-    Center(
-      child: Text(
-        "Start",
-        style: TextStyle(
-          color: IBStyle.textColorLogo,
-          fontSize: 50,
-        ),
-      ),
-    ),
+  static const List<Widget> _screenWidgets = [
+    ExploreWidget(),
+    // Text(""),
     WatchListWidget(),
   ];
 
@@ -64,7 +58,7 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
               label: "Watchlist"),
         ],
       ),
-      body: SafeArea(child: _ScreenWidgets[_selectedTab]),
+      body: SafeArea(child: _screenWidgets[_selectedTab]),
     );
   }
 }

@@ -6,4 +6,5 @@ abstract class IBStyle {
   static const Color textColorMain = Colors.white;
   static const Color textColorSnd = Color.fromRGBO(156, 163, 175, 1);
   static const Color textColorLogo = Color.fromRGBO(99, 102, 241, 1);
+  static const Color bgColorSearch = Color.fromRGBO(244, 244, 245, 0.1);
 }
